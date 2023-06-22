@@ -11,21 +11,21 @@
             <h1>Konversi Suhu</h1>
         </header>
             <section class="InputSection">
-                <label for="InputField">Celcius</label>
+                <label for="InputField" id="inputLabel">Celcius</label>
                 <input type="number" id="InputField"/>
             </section>
                 
         
             <section class="OutputSection">
-                <label for="OutputField">Fahrenheit</label>
+                <label for="OutputField" id="outputLabel">Fahrenheit</label>
                 <textarea id="OutputField"></textarea> 
                 <!--<p id="OutputField"></p> -->
             </section>
             
-            <button class="reverseButton"><i class="fa-solid fa-arrows-rotate"></i></button>
+            <button class="reverseButton" onclick=reverse()><i class="fa-solid fa-arrows-rotate"></i></button>
             <div class="Button">
-                <button class="bottomButton">Reset</button>
-                <button class="bottomButton">Converse</button>
+                <button class="bottomButton" id="resetButton" onclick=reset()>Reset</button>
+                <button class="bottomButton" id="convertButton" onclick=convert()>Convert</button>
             </div>
 
         <section class="CalculationSection">
@@ -39,6 +39,7 @@
             <p>°C = 5/9 (°F - 32°F)</p>
         </div>
     
+        <script src="JS/script.js"></script>
     </body>
 
 </html>
